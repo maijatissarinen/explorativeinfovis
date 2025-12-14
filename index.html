@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rising Sea Levels Visualization</title>
+  <link rel="stylesheet" href="./styles/index.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+<body>
+  <h1>What happens when sea levels rise?</h1>
+  <h2>13th sustainable development goal: Climate change</h2>
+
+<div class="intro">
+    <p>
+        One major consequence of climate change, is the rising of sea levels. As European, the other effects of climate change,
+        such as extreme weather conditions may not concern us personally, because they are often located in the continents of 
+        North and South America, as well as, Asia. Sea levels rising, however will concern us, as European countries are
+        at great risk to suffer from the consequences of rising sea levels. 
+    </p>
+    <p>
+        This visualization showcases a situation in which Europe faces the high emission scenario RCP 8.5 - SSP5, also known as 
+        the fossil fuel based development pathway. In this scenario, global economic growth relys heavily on fossil fuels, accelerating
+        the global warming and sea-level rise.
+    </p>
+    <p>
+        The map visualizes the median expected annual population exposed from coastal flooding. This amount is expressed in thousand
+        people.
+    </p>
+</div>
+<div class="map">
+    <svg id="map"></svg> 
+    <div class="tooltip" id="tooltip"></div> 
+</div>
+    
+<div class="restWater">
+    <div class="slider">
+        <input type="range" id="slider" min="2000" max="2100" step="10" value="2000">
+        <div id="yearLabel">Year: 2000</div>
+    </div>
+
+    <div class="sources">
+        <p>
+            Sources used for this visualization:
+        </p>
+        <p>
+            Vousdoukas, Michail; Mentaschi, Lorenzo; Voukouvalas, Evangelos; Bianchi, Alessandra; Dottori, Francesco; Feyen, Luc (2018): 
+            European Coastal Flood Risk. European Commission, Joint Research Centre (JRC) [Dataset] doi: 10.2905/jrc-liscoast-10009 PID: 
+            http://data.europa.eu/89h/jrc-liscoast-10009 (Values have been processed and interpolated from the original dataset)
+        </p>
+        <p>
+            Fox-Kemper, B., H. T. Hewitt, C. Xiao, G. Aðalgeirsdóttir, S. S. Drijfhout, T. L. Edwards, N. R. Golledge, M. Hemer, R. E. Kopp,
+            G. Krinner, A. Mix, D. Notz, S. Nowicki, I. S. Nurhati, L. Ruiz, J-B. Sallée, A. B. A. Slangen, Y. Yu, 2021, Ocean, Cryosphere 
+            and Sea Level Change. In: Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment 
+            Report of the Intergovernmental Panel on Climate Change [Masson-Delmotte, V., P. Zhai, A. Pirani, S. L. Connors, C. Péan, S. Berger, 
+            N. Caud, Y. Chen, L. Goldfarb, M. I. Gomis, M. Huang, K. Leitzell, E. Lonnoy, J. B. R. Matthews, T. K. Maycock, T. Waterfield, 
+            O. Yelekçi, R. Yu and B. Zhou (eds.)]. Cambridge University Press. In press.
+        </p>
+    </div>
+</div>
+    
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
