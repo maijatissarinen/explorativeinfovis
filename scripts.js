@@ -90,7 +90,7 @@ d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/w
             const year = +d3.select("#slider").property("value");
             const data = peopleData[country] ? peopleData[country][year] : 0;
             tooltip.style("opacity", 1)
-                    .html(`<b>${country}</b><br>Population displaced: (${year}): ${data}`)
+                    .html(`<b>${country}</b><br>Population affected: (${year}): ${data}`)
                     .style("left", (event.pageX + 10) + "px")
                     .style("top", (event.pageY + 10) + "px")
                     .style("z-index", 100);
